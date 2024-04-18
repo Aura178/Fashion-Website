@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homepage</title>
+<title>Login</title>
 <link rel="stylesheet" href="styles2.css">
-<script src="wscript.js"></script>
+<link rel="stylesheet" href="styles-login.css">
+<script src="js-login.js"></script>
 <link rel="icon" href="favicon.png" type="image/x-icon" sizes="32x32" />
 </head>
 <body>
@@ -37,24 +38,21 @@
     </nav>
   </header>
   <main>
-  <section class="welcome-section">
-    <div class="welcome-message">
-      <p class="first-paragraph">Say goodbye to wardrobe woes forever! With our innovative platform, effortlessly upgrade your entire wardrobe, from</p>
-      <p>clothing to footwear and accessories. Our website seamlessly crafts your daily outfits, tailored to your preferences,</p>
-      <p>occasion, and even weather conditions. Let us help you cherish every piece in your collection.</p>
-      <p><em>Show your clothes some love!</em></p>
-    </div>
-    <div class="weather-container">
-      <h1>Check the Weather before choosing your outfit</h1>
-      <div class="input-container">
-          <input type="text" id="cityInput" placeholder="Enter city">
-          <button id="getWeatherBtn">Check Weather</button>
+    <div class="login-container">
+        <form id="login-form" class="login-form">
+          <h2>LOGIN</h2>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">LOGIN</button>
+          <p id="error-message" class="error-message"></p>
+        </form>
       </div>
-      <div id="weatherInfo" class="weather-info"></div>
-      <div id="forecastInfo" class="forecast-info"></div>
-      <div id="animatedElement" class="animated-element"></div>
-  </div>
-  </section>
   </main>
   <footer>
     <footer>
@@ -71,9 +69,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-

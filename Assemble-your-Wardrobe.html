@@ -1,19 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uploader de imagini</title>
-    <link rel="stylesheet" href="styles2.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assemble-your-Wardrobe</title>
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="styles-quiz.css">
+<link rel="icon" href="favicon.png" type="image/x-icon" sizes="32x32" />
 </head>
 <body>
-    <h1>Uploader de imagini pentru garderoba ta</h1>
-    <form id="upload-form" enctype="multipart/form-data">
-        <input type="file" id="file-input" accept="image/*" multiple>
-        <button type="submit">Încarcă imagini</button>
-    </form>
-    <div id="image-preview"></div>
+<div class="background">
+  <header>
+    <nav>  
+      <div class="navbar-logo">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
+      </div>
+      <ul>
+        <li><a href="ourvision.html">Our Vision</a></li>
+        <li class="dropdown">
+          <a href="Assemble-your-Wardrobe.html">Assemble your Wardrobe</a>
+        </li>
+        <li class="dropdown">
+          <a href="trends.html">Trends</a>
+          <div class="dropdown-content">
+          </div>
+        </li>
+        <li><a href="homepage.html">Home</a></li>
+           <li class="button-wrapper">
+        <a href="login.html" class="button">LOGIN</a>
+      </li>
+      <li class="button-wrapper">
+        <a href="signup.html" class="primary-button">SIGN UP FOR FREE</a>
+      </li>
+      <li><a href="login.html"><img src="user.png" alt="User" class="user-icon"></a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+        <h2>Find what to wear Today</h2>
+        <form id="quizForm">
+            <h3>Do you own any crazy designs socks?</h3>
+            <input type="radio" name="q1" value="A">Yes<br>
+            <input type="radio" name="q1" value="B">No<br>
+        
+            <h3>Do you have to go to work today?</h3>
+            <input type="radio" name="q2" value="A">I have to go to school/work today.<br>
+            <input type="radio" name="q2" value="B">I do not have to go to school/work today.<br>
 
-    <script src="script.js"></script>
+            <h3>What is the day like?</h3>
+            <input type="radio" name="q3" value="A">Rainy<br>
+            <input type="radio" name="q3" value="B">Cold<br>
+            <input type="radio" name="q3" value="C">Cloudy<br>
+            <input type="radio" name="q3" value="D">Other<br>
+
+            <h3>What are you doing today?</h3>
+            <input type="radio" name="q4" value="A">Staying at home, remembering the past.<br>
+            <input type="radio" name="q4" value="B">Just hanging out, watching TV, and playing on the computer at home.<br>
+            <input type="radio" name="q4" value="C">Going to the mall, movies, friend's house, store, etc.<br>
+            <input type="radio" name="q4" value="D">School/work/church or other formal events.<br>
+            <input type="radio" name="q4" value="E">Other.<br>
+            
+            <h3>Are you going to work out today?</h3>
+            <input type="radio" name="q5" value="A">Yes<br>
+            <input type="radio" name="q5" value="B">No<br>
+
+            <h3>Are you going out?</h3>
+            <input type="radio" name="q6" value="A">Yes<br>
+            <input type="radio" name="q6" value="B">No<br>
+
+            <h3>What season is it?</h3>
+            <input type="radio" name="q7" value="A">Fall<br>
+            <input type="radio" name="q7" value="B">Winter<br>
+            <input type="radio" name="q7" value="C">Spring<br>
+            <input type="radio" name="q7" value="D">Summer<br>
+
+            <h3>How feminine are you?</h3>
+            <input type="radio" name="q8" value="A">Semi-feminine<br>
+            <input type="radio" name="q8" value="B">Super-feminine<br>
+            <input type="radio" name="q8" value="C">Semi-tomboy<br>
+            <input type="radio" name="q8" value="D">Super tomboyish<br>
+
+            <h3>Are you going to do something that you want to wear shoes for?</h3>
+            <input type="radio" name="q9" value="A">Yes<br>
+            <input type="radio" name="q9" value="B">No<br>
+
+            <h3>What is your current emotion?</h3>
+            <input type="radio" name="q10" value="A">Sad<br>
+            <input type="radio" name="q10" value="B">Happy<br>
+            <input type="radio" name="q10" value="C">Other<br>
+
+            <h3>What day of the week is it?</h3>
+            <input type="radio" name="q11" value="A">Monday<br>
+            <input type="radio" name="q11" value="B">Tuesday<br>
+            <input type="radio" name="q11" value="C">Wednesday<br>
+            <input type="radio" name="q11" value="D">Thursday<br>
+            <input type="radio" name="q11" value="E">Friday<br>
+            <input type="radio" name="q11" value="F">Saturday<br>
+            <input type="radio" name="q11" value="G">Sunday<br>
+
+            <button type="submit">See Results</button>
+        </form>
+        <div id="rezultat"></div>
+  </div>
+  </section>
+  </main>
+  <footer>
+    <footer>
+      <div class="social-media-buttons">
+        <a href="instagram.com"><img src="ig.png" alt="Instagram"></a>
+        <a href="facebook.com"><img src="fb.png" alt="Facebook"></a>
+        <a href="linkedin.com"><img src="li.png" alt="LinkedIn"></a>
+        <a href="whatsapp.com"><img src="wapp.png" alt="Whatsapp"></a>
+        <a href="telegram.com"><img src="tl.png" alt="Telegram"></a>
+      </div>  
+    <div class="footer-content">
+      <p>© 2024 Wardrobe Wizard. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="results.js"></script>
 </body>
 </html>
